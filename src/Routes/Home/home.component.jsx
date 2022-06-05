@@ -1,10 +1,12 @@
 import Directory from '../../Components/Directory/directory.component';
 
+import NestzLogo2 from '../../assets/images/LogoVersions/Nestz-logo2.jpg';
 import ContainerHomesMountains from '../../assets/images/ContainerHomesMountains.jpeg';
 import grannyFlat from '../../assets/images/grannyFlat.jpeg';
 import podBlueprint from '../../assets/images/podBlueprint.png';
 import socialContainer from '../../assets/images/socialContainer.jpeg';
 import ContactUs from '../../assets/images/ContactUs.png';
+import { HomePageContainer } from './home.styles';
 
 const Home = () => {
   const categories = [
@@ -47,7 +49,27 @@ const Home = () => {
   },
   ];
 
-  return <Directory categories={categories} />;
+  return (
+    <HomePageContainer>
+    <div className='titleContainer'> 
+    <h2>Tiny Homes and Zen Places</h2>  
+   </div>
+
+   <div className='jumbotron' >
+     <div>
+         <div className="homepage">
+         <img className= 'logoFadeIn' width="10%"  src={NestzLogo2} w3-animate-fading='true' alt='trees and bird logo of Nestz'/>
+         </div>
+         <div md='auto' className='jumbotronTitle'>
+           <div className='textContainer'>
+             Nestz are move in ready 8' x 20' tiny homes available for order in the Pacific Northwest. 
+           </div>
+         </div>
+     </div>
+   </div> 
+  <Directory categories={categories} />
+  </HomePageContainer>
+  );
 };
 
 export default Home;
