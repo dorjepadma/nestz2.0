@@ -15,39 +15,35 @@ import NestzLogo3 from '../../assets/images/LogoVersions/Nestz-logo3.jpeg';
 // import NavbarContainer from './Header.styles.jsx';
 import './Navigation.styles.scss'
 // navbar controls
-const Navigation = (
-  // { currentUser, hidden, signOutStart }
-  ) => (
+const Navigation = () => {
+  return (
 <>
-<div className='logoContainer' href='/'>
+<div className='navigation'>
+<Link className='logo-container' to='/' >
   <img className= 'headerLogo' src={NestzLogo3} alt="NestzTrees"/>
-</div>
-<div id="navbarScroll" className='navbar'>
-<div>
-<Link>
-<NavDropdown title="DETAILS" id="basic-nav-dropdown">
-    <NavDropdown.Item as= {Link} to='/Details'>DETAILS</NavDropdown.Item>
-    <NavDropdown.Item as= {Link} to="/Materials">MATERIALS</NavDropdown.Item>
-    <NavDropdown.Item as= {Link} to="/Delivery">DELIVERY</NavDropdown.Item>
-    <NavDropdown.Item as= {Link} to="/Customize">CUSTOMIZE</NavDropdown.Item>
-    <NavDropdown.Item as= {Link} to="/Benefits">BENEFITS</NavDropdown.Item>
-    <NavDropdown.Item as= {Link} to="/Shop">GET A NESTZ</NavDropdown.Item>
-</NavDropdown>
-<Nav.Link as= {Link} to='/FAQ' className='option'>F.A.Q.</Nav.Link>
-<Nav.Link as= {Link} to='/Process' className='option'>MAKING A NESTZ</Nav.Link>
-<Nav.Link as= {Link} to='/Story' className='option'>STORY</Nav.Link>
-<Nav.Link as= {Link} to='/Social' className='option'>SOCIAL</Nav.Link>
-<Nav.Link as= {Link} to='/Inquiries' className='option'>INQUIRIES</Nav.Link>
 </Link>
-
+<div className='nav-links-container'>
+<Link className='nav-link' to='/shop' >SHOP</Link>
+<Link to='/FAQ' className='nav-link'>F.A.Q.</Link>
+<Link  to='/Process' className='nav-link'>MAKING NESTZ</Link>
+<Link  to='/Story' className='nav-link'>STORY</Link>
+<Link  to='/Social' className='nav-link'>SOCIAL</Link>
+<Link  to='/Inquiries' className='nav-link'>INQUIRIES</Link>
+    <Link  to='/Details' className='nav-link'>DETAILS</Link>
+    <Link  to="/Materials" className='nav-link'>MATERIALS</Link>
+    <Link  to="/Delivery" className='nav-link'>DELIVERY</Link>
+    <Link  to="/Customize" className='nav-link'>CUSTOMIZE</Link>
+    <Link  to="/Benefits" className='nav-link'>BENEFITS</Link>
+    <Link  to="/Shop" className='nav-link'>GET A NESTZ</Link>
 </div>
 {/* <HomeIcon/> */}
 </div>
+
 {/* { hidden ? null : <CartDropdown/>} */}
 <Outlet />
 </>
 
-)
+)}
 
 // const mapStateToProps = createStructuredSelector({
 //   currentUser: selectCurrentUser,
