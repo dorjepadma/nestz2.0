@@ -71,10 +71,10 @@ const Home = () => {
          </div>
      </div>
    </div> 
-    <Outlet>
+   
 
   <Directory categories={categories} />
-    </Outlet>
+    <Outlet />
  
   </HomePageContainer>
   );
