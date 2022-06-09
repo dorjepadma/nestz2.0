@@ -1,4 +1,7 @@
+import { Outlet } from  'react-router-dom';
+
 import Directory from '../../Components/Directory/directory.component';
+
 
 import NestzLogo2 from '../../assets/images/LogoVersions/Nestz-logo2.jpg';
 import ContainerHomesMountains from '../../assets/images/ContainerHomesMountains.jpeg';
@@ -51,6 +54,7 @@ const Home = () => {
 
   return (
     <HomePageContainer>
+        
     <div className='titleContainer'> 
     <h2>Tiny Homes and Zen Places</h2>  
    </div>
@@ -67,7 +71,11 @@ const Home = () => {
          </div>
      </div>
    </div> 
+    <Outlet>
+
   <Directory categories={categories} />
+    </Outlet>
+ 
   </HomePageContainer>
   );
 };

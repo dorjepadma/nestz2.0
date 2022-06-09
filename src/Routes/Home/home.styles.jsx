@@ -20,7 +20,6 @@ export const HomePageContainer = styled.div`
 .exteriorImage {
   width: 100%;
   height: auto;
-  
 }
 .jumbotron {
   display: flex;
@@ -42,6 +41,7 @@ export const HomePageContainer = styled.div`
   opacity: .5;
   background-color: black;
   font-size: 2em;
+  margin-bottom: 5em;
 }
 .textContainer {
   text-align:center;
@@ -66,7 +66,7 @@ export const HomePageContainer = styled.div`
 }
 .logoFadeIn {
   position: relative;
-  margin-bottom: 10em;
+  margin-bottom: 15em;
   color: white;
   animation: fadeIn 5s;
   border-radius: .5em;
