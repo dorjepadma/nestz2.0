@@ -33,7 +33,7 @@ const Navigation = () => {
     <Link  to="/Materials" className='nav-link'>MATERIALS</Link>
     <Link  to="/Delivery" className='nav-link'>DELIVERY</Link>
     <Link  to="/Customize" className='nav-link'>CUSTOMIZE</Link>
-    <Link  to="/Benefits" className='nav-link'>BENEFITS</Link>
+    <Link  to="/Contact" className='nav-link'>CONTACT</Link>
     <Link  to="/Shop" className='nav-link'>GET A NESTZ</Link>
 </div>
 {/* <HomeIcon/> */}

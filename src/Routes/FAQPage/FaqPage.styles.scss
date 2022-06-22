@@ -1,0 +1,30 @@
+.faqPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('../../assets/images/freebirds.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  justify-content: center;
+ 
+
+}
+
+.faqCard {
+  justify-content: center;
+  align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    -moz-box-shadow: 0 0 20px black;
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    box-shadow: 0 15px 30px black;
+
+}
+.faqTitle{
+  color:white;
+  font-size: larger;
+}
