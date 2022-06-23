@@ -29,12 +29,13 @@ const Navigation = () => {
 <Link  to='/Story' className='nav-link'>STORY</Link>
 <Link  to='/Social' className='nav-link'>SOCIAL</Link>
 <Link  to='/Inquiries' className='nav-link'>INQUIRIES</Link>
-    <Link  to='/Details' className='nav-link'>DETAILS</Link>
-    <Link  to="/Materials" className='nav-link'>MATERIALS</Link>
-    <Link  to="/Delivery" className='nav-link'>DELIVERY</Link>
-    <Link  to="/Customize" className='nav-link'>CUSTOMIZE</Link>
-    <Link  to="/Contact" className='nav-link'>CONTACT</Link>
-    <Link  to="/Shop" className='nav-link'>GET A NESTZ</Link>
+<Link  to='/Details' className='nav-link'>DETAILS</Link>
+<Link  to="/Materials" className='nav-link'>MATERIALS</Link>
+<Link  to="/Delivery" className='nav-link'>DELIVERY</Link>
+<Link  to="/Customize" className='nav-link'>CUSTOMIZE</Link>
+<Link  to="/Contact" className='nav-link'>CONTACT</Link>
+<Link  to="/Shop" className='nav-link'>GET A NESTZ</Link>
+<Link  to="/SignIn" className='nav-link'>SIGN IN</Link>
 </div>
 {/* <HomeIcon/> */}
 </div>

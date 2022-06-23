@@ -9,7 +9,7 @@ const Footer = () => (
 <footer>
   <div className="container">
     <div className="row">
-      <div className="col-md-4 footer-column">
+      <div className="col-md-3 footer-column">
         <ul className="nav flex-column">
           <li className="nav-item">
             <span className="footer-title">Offerings:</span>
