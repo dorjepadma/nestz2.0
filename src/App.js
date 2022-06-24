@@ -7,7 +7,7 @@ import Delivery from './Routes/deliveryPage/Delivery.component';
 import FAQ from './Routes/FAQPage/FaqPage.component';
 import Footer from './Components/footer/Footer.component';
 import Process from './Routes/processPage/processPage.component';
-import SignIn from './Routes/signIn/signIn.component';
+import SignIn from './Components/signIn/signIn.component';
 import Social from './Routes/socialpage/Social.component';
 import Story from './Routes/Story/story.component';
 import Navigation from './Routes/Navigation/Navigation.component';
