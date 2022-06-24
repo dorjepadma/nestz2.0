@@ -39,7 +39,10 @@ export const signInWithFacebookRedirect = () => signInWithRedirect(auth, faceboo
 
 export const db = getFirestore();
 
-export const createUserDocumentFromAuth = async (userAuth) => {
+export const createUserDocumentFromAuth = async (
+  userAuth,
+  additonalInformation = { displayName: '' }
+  ) => {
   if (!userAuth) return;
   const userDocRef = doc(db, 'users', userAuth.uid);
 
@@ -55,6 +58,7 @@ if(!userSnapshot.exists()) {
       displayName,
       email,
       createdAt,
+      ...additonalInformation
     });
   } catch (error) {
     console.log('error creating user', error.message);
