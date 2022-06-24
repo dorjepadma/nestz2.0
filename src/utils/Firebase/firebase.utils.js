@@ -40,6 +40,7 @@ export const signInWithFacebookRedirect = () => signInWithRedirect(auth, faceboo
 export const db = getFirestore();
 
 export const createUserDocumentFromAuth = async (userAuth) => {
+  if (!userAuth) return;
   const userDocRef = doc(db, 'users', userAuth.uid);
 
 const userSnapshot = await getDoc(userDocRef);
@@ -64,10 +65,6 @@ return userDocRef
 //return user data
 }
 export const createAuthUserWithEmailAndPassword = async (email, password) => {
-  try {
-    const authUserCredential = await createUserWithEmailAndPassword(email, password);
-    return authUserCredential.user;
-  } catch (error) {
-    console.log('error creating user', error.message);
-  }
+  if (!email || !password) return;
+ return await createUserWithEmailAndPassword(auth, email, password);
 }

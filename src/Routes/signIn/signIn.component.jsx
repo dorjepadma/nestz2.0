@@ -24,7 +24,6 @@ const logGoogleUser = async () => {
         Sign In With Google
       </button>
       <SignUpForm />
-
     </div>
   )
 }

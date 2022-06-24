@@ -1,21 +1,20 @@
 import React from 'react';
+import { Container } from 'react-bootstrap'
 
 import Curator from './Curator.component';
 
 import './Social.styles.scss';
 
-
-// ReactDOM.render()
 const Social = () => (
-<container className= 'socialPage'>
+<Container className= 'socialPage'>
     <div className='socialCardContainer'>
  
   
   <div className= 'socialHeader'>
   <h2>Nestz Life.</h2>
-  <text>
+  <p>
 We would love to hear from you and see how you would use a Nestz. Connect with us on our Twitter, LinkedIn, Instagram, or Facebook pages. Tag us with #Nestz and our social media will promote your creative lifestyle.
-  </text>
+  </p>
     </div>   
 
 
@@ -23,7 +22,7 @@ We would love to hear from you and see how you would use a Nestz. Connect with u
       <Curator feedId="49b41e79-496f-4e44-b999-ac6cf4f453ba" />
   </div>
   </div>
-</container>
+</Container>
 )
 
 export default Social;
