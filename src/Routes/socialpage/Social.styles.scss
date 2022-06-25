@@ -1,0 +1,49 @@
+.socialPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url('../../assets/images/Mountains.jpeg');
+  background-size: cover;
+
+}
+.socialCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.socialCard {
+  width: 80%;
+  height:20%;
+  color: white;
+  font-size: 1.2em;
+  padding: 4em;
+  margin: 4em;
+}
+.socialImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.socialHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:fit-content;
+  width: 80%;
+  background-color: #0EBFE9;
+  padding: .5em;
+  margin-top: 2em;
+}
+.socialIcon {
+  margin: .5em;
+}
+@media screen and (max-width: 600px) {
+  .card {
+     width: 100%;
+  }
+}
+.curatorContainer {
+  padding: 3em;
+}
