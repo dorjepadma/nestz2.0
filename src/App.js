@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div>
     <Routes>
-      < Route path='/' element={<Navigation />}>
+      <Route path='/' element={<Navigation />}>
       <Route  index element={<Home />} />
       <Route  path='Benefits' index element={<Benefits />} />
       <Route  path='Contact' index element={<Contact />} />

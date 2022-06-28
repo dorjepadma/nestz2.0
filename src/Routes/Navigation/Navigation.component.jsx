@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 // import { connect } from 'react-redux';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 
@@ -37,22 +37,12 @@ const Navigation = () => {
 <Link  to="/Shop" className='nav-link'>GET A NESTZ</Link>
 <Link  to="/SignIn" className='nav-link'>SIGN IN</Link>
 </div>
-{/* <HomeIcon/> */}
 </div>
 
-{/* { hidden ? null : <CartDropdown/>} */}
 <Outlet />
 </>
 
 )}
 
-// const mapStateToProps = createStructuredSelector({
-//   currentUser: selectCurrentUser,
-//   hidden: selectCartHidden
-// })
-
-// const mapDispatchToProps = dispatch => ({
-//   signOutStart: () => dispatch(signOutStart())
-// })
 
 export default Navigation
