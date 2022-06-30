@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { Fragment, useContext } from 'react';
 
 import { Link, Outlet } from 'react-router-dom';
+import { UserContext } from '../../Context/user.context';
+import { signOutUser }  from '../../utils/Firebase/firebase.utils';
 // import { connect } from 'react-redux';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 
@@ -16,8 +18,10 @@ import NestzLogo3 from '../../assets/images/LogoVersions/Nestz-logo3.jpeg';
 import './Navigation.styles.scss'
 // navbar controls
 const Navigation = () => {
+  const { currentUser } = useContext(UserContext);
+ 
   return (
-<>
+<Fragment>
 <div className='navigation'>
 <Link className='logo-container' to='/' >
   <img className= 'headerLogo' src={NestzLogo3} alt="NestzTrees"/>
@@ -35,12 +39,18 @@ const Navigation = () => {
 <Link  to="/Customize" className='nav-link'>CUSTOMIZE</Link>
 <Link  to="/Contact" className='nav-link'>CONTACT</Link>
 <Link  to="/Shop" className='nav-link'>GET A NESTZ</Link>
-<Link  to="/SignIn" className='nav-link'>SIGN IN</Link>
+{
+  currentUser ? (
+    <span className='nav-link' onClick={signOutUser}>SIGN OUT </span>
+    ) : ( 
+    <Link  to="/SignIn" className='nav-link'>SIGN IN</Link>
+  )
+}
 </div>
 </div>
 
 <Outlet />
-</>
+</Fragment>
 
 )}
 
