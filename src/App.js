@@ -27,7 +27,6 @@ const App = () => {
       <Route  path='story' index element={<Story />}/>
       <Route  path='Social' index element={<Social />}/>
       </Route>
-     
     </Routes>
     <Footer/>
     </div>
