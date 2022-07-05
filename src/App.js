@@ -8,6 +8,7 @@ import FAQ from './Routes/FAQPage/FaqPage.component';
 import Footer from './Components/footer/Footer.component';
 import Process from './Routes/processPage/processPage.component';
 import Authentication from './Routes/AuthenticationPage/Authentication.component';
+import Shop from './Routes/shop/shop.component';
 import Social from './Routes/socialpage/Social.component';
 import Story from './Routes/Story/story.component';
 import Navigation from './Routes/Navigation/Navigation.component';
@@ -24,6 +25,7 @@ const App = () => {
       <Route  path='FAQ' index element={<FAQ />}/>
       <Route  path='Process' index element={<Process />}/>
       <Route  path='SignIn' index element={<Authentication />}/>
+      <Route  path='Shop' index element={<Shop />}/>
       <Route  path='story' index element={<Story />}/>
       <Route  path='Social' index element={<Social />}/>
       </Route>
