@@ -1,24 +1,27 @@
 import React, { Fragment, useContext } from 'react';
 
 import { Link, Outlet } from 'react-router-dom';
+
+import CartIcon from '../../Components/CartIcon/CartIcon.component';
+import CartDropdown from '../../Components/CartDropdown/CartDropdown.component';
 import { UserContext } from '../../Context/user.context';
+import { CartContext } from '../../Context/cart.context';
 import { signOutUser }  from '../../utils/Firebase/firebase.utils';
 // import { connect } from 'react-redux';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 
 import NestzLogo3 from '../../assets/images/LogoVersions/Nestz-logo3.jpeg';
 // import HomeIcon from '../homeIcon/homeIcon.component';
-// import CartDropdown from '../cart/cartDropdown.component';
 // import { selectCartHidden } from '../../redux/cart/cart.selectors';
 // import { selectCurrentUser } from '../../redux/user/user.selector'
 // import { signOutStart } from '../../redux/user/user.actions';
-
 
 // import NavbarContainer from './Header.styles.jsx';
 import './Navigation.styles.scss'
 // navbar controls
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
+  const { isCartOpen} = useContext(CartContext);
  
   return (
 <Fragment>
@@ -46,9 +49,10 @@ const Navigation = () => {
     <Link  to="/SignIn" className='nav-link'>SIGN IN</Link>
   )
 }
+  <CartIcon />
 </div>
+{isCartOpen && <CartDropdown />}
 </div>
-
 <Outlet />
 </Fragment>
 
