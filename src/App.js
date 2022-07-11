@@ -12,6 +12,8 @@ import Shop from './Routes/shop/shop.component';
 import Social from './Routes/socialpage/Social.component';
 import Story from './Routes/Story/story.component';
 import Navigation from './Routes/Navigation/Navigation.component';
+import Checkout from './Routes/CheckoutPage/Checkout.component';
+
 
 const App = () => {
   return (
@@ -28,6 +30,7 @@ const App = () => {
       <Route  path='Shop' index element={<Shop />}/>
       <Route  path='story' index element={<Story />}/>
       <Route  path='Social' index element={<Social />}/>
+      <Route  path='Checkout' index element={<Checkout />}/>
       </Route>
     </Routes>
     <Footer/>
