@@ -1,4 +1,4 @@
-[
+const SHOP_DATA =[
   {
     "id": 1,
     "name": "Bedroom Nestz",
@@ -43,3 +43,4 @@
   }
   
 ]
+export default SHOP_DATA;
