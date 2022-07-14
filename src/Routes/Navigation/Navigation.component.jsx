@@ -1,5 +1,4 @@
 import React, { Fragment, useContext } from 'react';
-
 import { Link, Outlet } from 'react-router-dom';
 
 import CartIcon from '../../Components/CartIcon/CartIcon.component';
@@ -17,7 +16,8 @@ import NestzLogo3 from '../../assets/images/LogoVersions/Nestz-logo3.jpeg';
 // import { signOutStart } from '../../redux/user/user.actions';
 
 // import NavbarContainer from './Header.styles.jsx';
-import './Navigation.styles.scss'
+// import './Navigation.styles.scss'
+import { NavigationContainer, HeaderLogo, LogoContainer, NavLinksContainer } from './Navigation.styles';
 // navbar controls
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
@@ -25,11 +25,15 @@ const Navigation = () => {
  
   return (
 <Fragment>
-<div className='navigation'>
-<Link className='logo-container' to='/' >
-  <img className= 'headerLogo' src={NestzLogo3} alt="NestzTrees"/>
+<NavigationContainer>
+<div>
+<Link  to='/' >
+<HeaderLogo>
+  <img className='logo' src={NestzLogo3} alt="NestzTrees"/>
+</HeaderLogo>
 </Link>
-<div className='nav-links-container'>
+</div>
+<NavLinksContainer>
 <Link className='nav-link' to='/shop' >SHOP</Link>
 <Link to='/FAQ' className='nav-link'>F.A.Q.</Link>
 <Link  to='/Process' className='nav-link'>MAKING NESTZ</Link>
@@ -50,9 +54,10 @@ const Navigation = () => {
   )
 }
   <CartIcon />
-</div>
+</NavLinksContainer>
 {isCartOpen && <CartDropdown />}
-</div>
+
+</NavigationContainer>
 <Outlet />
 </Fragment>
 

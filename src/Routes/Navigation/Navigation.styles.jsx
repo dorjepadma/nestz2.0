@@ -1,43 +1,47 @@
 import styled from "styled-components";
-// import { Navbar} from 'react-bootstrap';
+// import { Navbar } from 'react-bootstrap';
 
 
-const NavbarContainer = styled.div`
-.header {
-  height: 4em;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+export const NavigationContainer = styled.div`
+
+  height: 70px; 
+  width: 100%; 
+  display: flex; 
+  justify-content: space-between; 
   background-color: #0EBFE9;
-
-  .logoContainer {
-    height: 100%;
-    width: 25%;
-  }
-  
-  .headerLogo {
-    height: 140%;
-    border: .1em solid #021a40;
-    margin-top: -.45em;
-  }
-  
-  .basic-navbar-nav > li > .basic-nav-dropdown { background-color: #FF0000; }
-
-  .options {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    .option {
-      padding: 10px 15px;
-      cursor: pointer;
-    }
-  }
- 
+  padding: 3em;
+  @media screen and (max-width: 800px) {
+    height: 60px;
+    padding: 10px; 
 }
+.logo
+{
+  height: 100%; 
+  width: 60px;
+  border: .1em solid #021a40;}
+  `
+  
+  
+export const LogoContainer = styled.div`
+height: 30%; 
+width: 60px;
 `
-;
-export default NavbarContainer;
+
+export const NavLinksContainer = styled.div`
+width: 50%; 
+height: 100%; 
+display: flex; 
+align-items: center; 
+justify-content: flex-end;`
+
+export const NavLink = styled.div`
+padding: 10px 15px; 
+  cursor: pointer;`
+
+export const HeaderLogo = styled.div` 
+height: 4em;
+border: .1em solid #021a40;
+margin-top: -2em;`
+
+
 

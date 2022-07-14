@@ -14,10 +14,13 @@ import Story from './Routes/Story/story.component';
 import Navigation from './Routes/Navigation/Navigation.component';
 import Checkout from './Routes/CheckoutPage/Checkout.component';
 
+import { GlobalStyles } from './global.styles';
+
 
 const App = () => {
   return (
     <div>
+      <GlobalStyles />
     <Routes>
       <Route path='/' element={<Navigation />}>
       <Route  index element={<Home />} />
