@@ -12,9 +12,9 @@ import Lights from '../../assets/images/processPage/NetszLights.png'
 import Heater from '../../assets/images/processPage/Nestz_heater.png'
 import CompleteNestz from '../../assets/images/processPage/Complete_Nestz.png'
 
-import './processPage.styles.scss'
+import './ConstructionPage.styles.scss'
 
-const Process = () => (
+const Construction = () => (
 <div className='processPage'>
 <div className='processTitle'>
   <h1 >How a Nestz is made</h1>
@@ -140,4 +140,4 @@ const Process = () => (
 </div>
 )
 
-export default Process;
+export default Construction;

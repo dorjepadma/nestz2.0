@@ -8,6 +8,7 @@ import './Button.styles.scss';
 const BUTTON_TYPE_CLASSES = {
   google: 'google-button',
   inverted: 'inverted-button',
+  blue: 'blue-button',
 }
 
 const Button = ({ children, buttonType, ...otherProps }) => {

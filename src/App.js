@@ -6,7 +6,7 @@ import Contact from './Routes/contactpage/Contact.component';
 import Delivery from './Routes/deliveryPage/Delivery.component';
 import FAQ from './Routes/FAQPage/FaqPage.component';
 import Footer from './Components/footer/Footer.component';
-import Process from './Routes/processPage/processPage.component';
+import Construction from './Routes/ConstructionPage/ConstructionPage.component';
 import Authentication from './Routes/AuthenticationPage/Authentication.component';
 import Shop from './Routes/shop/shop.component';
 import Social from './Routes/socialpage/Social.component';
@@ -28,7 +28,7 @@ const App = () => {
       <Route  path='Contact' index element={<Contact />} />
       <Route  path='Delivery' index element={<Delivery />} />
       <Route  path='FAQ' index element={<FAQ />}/>
-      <Route  path='Process' index element={<Process />}/>
+      <Route  path='Construction' index element={<Construction />}/>
       <Route  path='SignIn' index element={<Authentication />}/>
       <Route  path='Shop' index element={<Shop />}/>
       <Route  path='story' index element={<Story />}/>

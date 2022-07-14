@@ -27,6 +27,12 @@
   &:hover { 
         background-color: #357ae8; 
         border: none; } } 
+  &.blue-button { 
+      background-color:  #0EBFE9; 
+      color: white; 
+  &:hover { 
+        background-color:  #0EBFE1; 
+        border: none; } } 
   &.inverted { 
       background-color: white; 
       color: black; 

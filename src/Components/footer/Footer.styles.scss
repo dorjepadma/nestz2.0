@@ -1,23 +1,11 @@
 .footer {
+  height: 10vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 4em;
-  width: 100%;
   margin-bottom: 1em;
   background-color: #0EBFE9;
-
-  .logoContainer {
-    height: 100%;
-    width: 70px;
-  }
-
-  .footerLogo {
-    height: 90%;
-    border: .15em solid #021a40;
-    padding: 1;
-    margin:.2em
-  }
 
   .options {
     width: 50%;
@@ -35,6 +23,13 @@
     justify-content: space-between;
     padding-left: 5em;
     padding-right: 5em;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      font-size: large;
+    }
   }
 
   .copyright {
@@ -57,21 +52,14 @@
     display: flex;
     align-items: center;
   }
-$link-light-grey: #6c757d;
+$link-light-grey: black;
 $primary-orange: #fec503;
 $footer-background-light-grey: #212529;
 $footer-background-grey: #1a1d20;
-$social-buttons-circle-dark-grey: #1a1d20;
 
-.col-md-4:nth-child(even) {
-  // background: blue;
-}
-.col-md-4:nth-child(odd) {
-  // background: red;
-}
 
 a {
-  color: $link-light-grey;
+  color: black;
 }
 a:hover {
   color: $primary-orange;
