@@ -20,7 +20,7 @@ const Customize = () => (
     className='image' 
     src={blankNestz} 
     alt='inside a nestz' rounded/>
-    <text className='customizableCardText'>The Basic Nestz is a blank canvas on the inside. The walls are white, the doors are also white. They can be painted whatever color you like. The floor is a fuax walnut. You can customize it as you wish creating the unique home or office you are looking for. 
+    <text className='customizableCardText'>The Basic Nestz is a blank canvas on the inside. The walls are white, the doors are also white. They can be painted whatever color you like. The floor is a faux walnut. You can customize it as you wish creating the unique home or office you are looking for. 
   </text>
     </div>
     <div className='customizeCard'>
