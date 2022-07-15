@@ -30,7 +30,6 @@ const Navigation = () => {
     <LeftContainer>
       <NavBarLinkContainer>
         < NavBarLink  to='/shop' >SHOP</ NavBarLink>
-        < NavBarLink  to='/Process' >MAKING NESTZ</ NavBarLink>
         < NavBarLink to='/FAQ' >F.A.Q.</ NavBarLink>
         < NavBarLink  to='/Story' >STORY</ NavBarLink>
         < NavBarLink  to='/Social' >SOCIAL</ NavBarLink>
@@ -60,7 +59,6 @@ const Navigation = () => {
  ( <NavBarExtendedContainer> 
 < NavBarLinkExtended  to='/shop' >SHOP</ NavBarLinkExtended>
         < NavBarLinkExtended to='/FAQ' >F.A.Q.</ NavBarLinkExtended>
-        < NavBarLinkExtended  to='/Process' >MAKING NESTZ</ NavBarLinkExtended>
         < NavBarLinkExtended  to='/Story' >STORY</ NavBarLinkExtended>
         < NavBarLinkExtended  to='/Social' >SOCIAL</ NavBarLinkExtended>
         < NavBarLinkExtended  to='/Inquiries' >INQUIRIES</ NavBarLinkExtended>

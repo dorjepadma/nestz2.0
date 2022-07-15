@@ -64,7 +64,7 @@ const Footer = () => (
    
     <div className="row text-center">
       <div className="col-md-4 box">
-        <span className="copywrite
+        <span className="copyright
         ">©RobsinInc 
         <script>document.write(new Date().getFullYear())</script>
         </span>
