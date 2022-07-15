@@ -30,7 +30,8 @@ export const HeaderLogo = styled.img`
 height: auto;
 max-width: 68px;
 border: .2em solid #021a40;
-margin-top:5px;`
+margin-top:5px;
+margin-left:5px;`
 
 export const LeftContainer = styled.div`
 flex: 95%;

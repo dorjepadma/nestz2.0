@@ -36,7 +36,6 @@ const Navigation = () => {
         < NavBarLink  to='/Details' >DETAILS</ NavBarLink>
         < NavBarLink  to="/Materials" >MATERIALS</ NavBarLink>
         < NavBarLink  to="/Delivery" >DELIVERY</ NavBarLink>
-        < NavBarLink  to="/Customize" >CUSTOMIZE</ NavBarLink>
         < NavBarLink  to="/Contact" >CONTACT</ NavBarLink>
         {
           currentUser ? (

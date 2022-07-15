@@ -13,6 +13,7 @@ import Social from './Routes/socialpage/Social.component';
 import Story from './Routes/Story/story.component';
 import Navigation from './Routes/Navigation/Navigation.component';
 import Checkout from './Routes/CheckoutPage/Checkout.component';
+import Customize from './Routes/CustomizePage/Customize.component';
 
 import { GlobalStyles } from './global.styles';
 
@@ -26,6 +27,7 @@ const App = () => {
       <Route  index element={<Home />} />
       <Route  path='Benefits' index element={<Benefits />} />
       <Route  path='Contact' index element={<Contact />} />
+      <Route  path='Customize' index element={<Customize />} />
       <Route  path='Delivery' index element={<Delivery />} />
       <Route  path='FAQ' index element={<FAQ />}/>
       <Route  path='Construction' index element={<Construction />}/>

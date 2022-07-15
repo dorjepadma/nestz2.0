@@ -19,7 +19,7 @@
   font-size: large;
   margin: 33px auto;
   background: black;
-  opacity: .95;
+  opacity: .90;
     -moz-box-shadow: 0 0 20px black;
     -webkit-box-shadow: 0 0 20px black;
     box-shadow: 0 0 20px black;
@@ -41,8 +41,8 @@
 @media (max-width: 800px) {
   flex: none;
   height:auto;
-  margin: 0;
-  padding:20px;
+  margin: 2px;
+
 }
 }
 .constructionImage {

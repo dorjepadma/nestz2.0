@@ -1,42 +1,42 @@
 
 .deliveryPage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height:100%;
-  width: 100%;
-  background: url('../../assets/images/DeliveryPage/sky.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+display: flex;
+flex-direction: column;
+background: url('../../assets/images/DeliveryPage/sky.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
 }
 .deliveryCard {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-    width: 88%;
-    margin: 50px auto;
+    width: 90%;
+    margin: 3em auto;
     padding: 20px;
     background: white;
-    -moz-box-shadow: 0 0 20px black;
-    -webkit-box-shadow: 0 0 20px black;
-    box-shadow: 0 0 20px black;
-    box-shadow: 0 15px 30px black;
-    border-radius: 3%;
+    border-radius: 1%;
+    -moz-box-shadow: 0 0 13px black;
+    -webkit-box-shadow: 0 0 13px black;
+    box-shadow: 0 15px 13px black;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 3;
+      padding: 3;
+    }
 }
 .deliveryText {
-  padding-top: .5em;
-}
-.deliveryText h1 {
-  font-size: 2.5em;
+  width: 88%;
+  padding: 1em;
+  font-weight: large;
   font-weight: bold;
-  color: #00bcd4;
+ 
 }
 .deliveryImage {
-  width: 100%;
-  height: 100%;
+  width: 95%;
   border: 2px solid black;
-  -moz-box-shadow: 0 0 20px black;
-  -webkit-box-shadow: 0 0 20px black;
-  box-shadow: 0 0 20px black;
-  box-shadow: 0 15px 30px black;
+
 }
