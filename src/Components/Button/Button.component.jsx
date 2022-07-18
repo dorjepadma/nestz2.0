@@ -5,7 +5,7 @@ import './Button.styles.scss';
 
 // google signin
 
-const BUTTON_TYPE_CLASSES = {
+export const BUTTON_TYPE_CLASSES = {
   google: 'google-button',
   inverted: 'inverted-button',
   blue: 'blue-button',

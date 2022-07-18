@@ -6,6 +6,9 @@ import App from './App';
 import { UserProvider } from './Context/user.context';
 import { CategoriesProvider} from './Context/categories.context';
 import { CartProvider } from './Context/cart.context';
+import { Elements } from '@stripe/react-stripe-js'
+
+import { stripePromise } from './utils/Stripe/Stripe.utils';
 
 import './index.scss';
 
@@ -17,7 +20,9 @@ render(
       <UserProvider >
         <CategoriesProvider>
           <CartProvider>
-          <App />
+            <Elements stripe={stripePromise}>
+              <App />
+            </Elements>
           </CartProvider>
         </CategoriesProvider>
       </UserProvider>
