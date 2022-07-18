@@ -17,6 +17,7 @@ import Customize from './Routes/CustomizePage/Customize.component';
 import ProductSpecs from './Routes/SpecsPage/Specs.component'
 
 import { GlobalStyles } from './global.styles';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {

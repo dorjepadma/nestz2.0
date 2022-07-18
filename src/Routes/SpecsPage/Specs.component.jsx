@@ -11,19 +11,19 @@ const ProductSpecs = () => (
 
 // list of possible products and details of products in the nestz unit in a list group graph form. Along with approximate diagram and blueprint of the Nestz unit
 <div className='detailsPage'>
- 
 <Card className='detailsCard'>
+ 
       <div className='blueprintCard'>
       
       <h1 className="detailsTitle">NESTZ DETAILS </h1>
       <h2> Office Model Blueprint</h2>
-            <Image className='blueprintImage' src={OfficeBlueprint} alt='before and after container home'/>
+            <Image className='blueprintImage' src={OfficeBlueprint} alt='office Nestz blueprint'/>
       <h2> Bedroom Model Blueprint</h2>
-            <Image className='blueprintImage' src={BedroomBlueprint} alt='before and after container home'/>
+            <Image className='blueprintImage' src={BedroomBlueprint} alt='bedroom Nestz blueprint'/>
       </div>
-      <Card.Body>
+    
       <Card.Text>Nestz are highly customizable and built with quality ingredients. They are delivered where you want them and when you want them. Available for purchase or rent based on your needs.</Card.Text>
-      <Card.Text>
+      <ListGroup>
         All Nestz come with the following or have the following options: 
         <ListGroup.Item as='li' className="specList">Dimensions: Length 19.02 feet
                           Width 7.87 feet
@@ -45,8 +45,8 @@ const ProductSpecs = () => (
         <ListGroup.Item as='li' className="specList">Kitchen with range top, sink, refrigerator, and freezer is optional</ListGroup.Item>
         <ListGroup.Item as='li' className="specList">Solar units are absolutely doable, call us</ListGroup.Item>
         <ListGroup.Item as='li' className="specList">Unit comes with an on demand propane water heater, an electric water heater can be installed upon request but would require a 50 amp electric configuration, call us</ListGroup.Item>
-      </Card.Text>
-      </Card.Body>
+      </ListGroup>
+  
     </Card>
 
 </div>

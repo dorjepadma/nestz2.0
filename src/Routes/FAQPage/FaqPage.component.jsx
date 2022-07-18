@@ -46,7 +46,7 @@ const FAQ = () => (
         <div className="faqCardTitle">
           How are Nestz delivered?
         </div>
-        We will deliver the Nestz to your property. The delivery charge is 200 dollars. This will include us delivering it to your property and spending time with you helping to pick it up. We will deliver anywhere within Washington or Oregon state. For more information read the Delivery page.
+        We deliver the Nestz to your property on top of our flatbed trailer and then place it where you want. The delivery charge is 200 dollars if within a 30 mile radius of the PDX airport. The delivery fee is 4$ per mile. This fee includes delivery to your property but does not include time helping to set it up. We will deliver anywhere within Washington or Oregon state. For more information read the Delivery page.
         <Link className='FAQlink' to='/Delivery'>
         <Button buttonType='blue'>We Deliver</Button>
         </Link>
