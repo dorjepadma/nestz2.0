@@ -1,4 +1,11 @@
+import { useEffect } from "react";
 import { Routes, Route } from 'react-router-dom';
+import { useDispatch } from "react-redux";
+
+
+import { onAuthStateChangedListener, 
+  createUserDocumentFromAuth
+} from "./utils/Firebase/firebase.utils";
 
 import Home from './Routes/Home/home.component';
 import Bathroom from './Routes/BathroomPage/Bathroom.component';
@@ -22,11 +29,25 @@ import ProductSpecs from './Routes/SpecsPage/Specs.component'
 import Paint from './Routes/PaintPage/Paint.component';
 import Kitchen from './Routes/KitchenPage/Kitchen.component';
 
+import { setCurrentUser } from "./Store/User/User.action";
+
 import { GlobalStyles } from './global.styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChangedListener((user) => {
+      if (user) {
+        createUserDocumentFromAuth(user);
+      }
+      dispatch(setCurrentUser(user));
+    });
+
+    return unsubscribe;
+  }, [dispatch]);
   return (
     <div>
       <GlobalStyles />

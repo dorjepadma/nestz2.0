@@ -1,14 +1,27 @@
-import { useContext, Fragment } from 'react';
+import { useEffect } from 'react';
+// import { Routes, Route} from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectCategoriesMap } from '../../Store/Categories/Category.selector';
 
-import { CategoriesContext } from '../../Context/categories.context';
+import { getCategoriesAndDocuments } from '../../utils/Firebase/firebase.utils';
+import { setCategories } from '../../Store/Categories/Category.action';
+
 import ProductCard from '../../Components/ProductCard/ProductCard.component';
 
 import './shop.styles.scss';
 
 
-
 const Shop = () => {
-  const { categoriesMap } = useContext(CategoriesContext);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const getCategoriesMap = async () => {
+      const categoriesArray = await getCategoriesAndDocuments('categories');
+      dispatch(setCategories(categoriesArray));
+    }
+    getCategoriesMap();
+  }, [dispatch]);
+  const categoriesMap = useSelector(selectCategoriesMap);
 
   return (
     <div className='shopPage'>

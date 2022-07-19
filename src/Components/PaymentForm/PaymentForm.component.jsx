@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
 import { useSelector } from 'react-redux';
 
+import { selectCurrentUser } from '../../Store/User/User.selector';
+
 import { PaymentFormContainer, FormContainer } from './PaymentForm.styles';
 import Button, { BUTTON_TYPE_CLASSES } from '../Button/Button.component';
 

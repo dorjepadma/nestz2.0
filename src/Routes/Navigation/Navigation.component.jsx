@@ -1,20 +1,31 @@
 import React, { Fragment, useContext, useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { NavDropdown } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
+
+import { selectCurrentUser } from '../../Store/User/User.selector';
 
 import CartIcon from '../../Components/CartIcon/CartIcon.component';
 import CartDropdown from '../../Components/CartDropdown/CartDropdown.component';
-import { UserContext } from '../../Context/user.context';
 import { CartContext } from '../../Context/cart.context';
 import { signOutUser }  from '../../utils/Firebase/firebase.utils';
 // import { connect } from 'react-redux';
 
 import NestzLogo3 from '../../assets/images/LogoVersions/Nestz-logo3.jpeg';
 
-import { NavigationContainer, HeaderLogo, NavBarLinkContainer, LeftContainer, RightContainer, NavBarInnerContainer, NavBarExtendedContainer, NavBarLink, SignOutDiv, OpenLinksButton, NavBarLinkExtended } from './Navigation.styles';
+import { NavigationContainer, 
+  HeaderLogo, 
+  NavBarLinkContainer, 
+  LeftContainer, 
+  RightContainer, 
+  NavBarInnerContainer, 
+  NavBarExtendedContainer, 
+  NavBarLink, 
+  SignOutDiv, 
+  OpenLinksButton, 
+  NavBarLinkExtended } from './Navigation.styles';
 // navbar controls
 const Navigation = () => {
-  const { currentUser } = useContext(UserContext);
+const currentUser = useSelector (selectCurrentUser);
   const { isCartOpen} = useContext(CartContext);
   const [ extendNavBar, setExtendNavBar ] = useState(false);
  
