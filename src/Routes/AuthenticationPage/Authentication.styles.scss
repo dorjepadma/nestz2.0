@@ -3,4 +3,11 @@
   width: 900px;
   justify-content: space-between;
   margin: 36px auto;
-}
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+    
+  }
+

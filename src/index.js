@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import App from './App';
-import { CartProvider } from './Context/cart.context';
 import { Elements } from '@stripe/react-stripe-js'
 
 import { stripePromise } from './utils/Stripe/Stripe.utils';
@@ -18,11 +17,9 @@ render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-            <CartProvider>
-              <Elements stripe={stripePromise}>
-                <App />
-              </Elements>
-            </CartProvider>
+        <Elements stripe={stripePromise}>
+          <App />
+        </Elements> 
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,

@@ -89,7 +89,7 @@ const handleChange = (event) => {
         required onChange={handleChange}
         name='confirmPassword' 
         value={confirmPassword} />
-        <Button type='submit'>Sign Up</Button>
+        <Button className = 'buttonContainer' type='submit'>Sign Up</Button>
 
      </form>
    </span>
