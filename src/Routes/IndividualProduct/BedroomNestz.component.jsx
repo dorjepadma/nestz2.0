@@ -2,7 +2,6 @@ import React from 'react';
 // import { Link } from 'react-router-dom'
 
 import { Card, Button } from 'react-bootstrap';
-// import ScriptTag from 'react-script-tag';
 
 import BedroomBlueprint from '../../assets/images/DetailsPage/BedroomModel.png'
 
