@@ -64,13 +64,13 @@ const FAQ = () => (
         <div className="faqCardTitle">
           How do I prepare the foundation for a Nestz?
         </div>
-        A Nestz unit needs to be on stable ground. Whether that is leveled earth, a concrete foundation, or a porch is up to you. The only requirement is that it be level and not prone to movement during cyclical seasonal changes. 
+        A Nestz unit needs to be on stable ground. It needs to have 6 points of level contact, all four corners and two midpoint spots. Whether that is leveled earth, a concrete foundation, or a porch is up to you. The only requirement is that it be level and not prone to movement during cyclical seasonal changes. 
       </div>
       <div className='faqCardBlock'>
         <div className="faqCardTitle">
           What kind of utility hook ups do I need to place a Nestz?
         </div>
-        If you get a Luxury unit with a bathroom you will need a sewer or sceptic connection with in 120 feet of the unit. For electricity a 120amp connection will be sufficient. A nestz can easily be set up for off grid housing. Nestz are not mobile housing, temporary housing, or permanent housing, so they often do not need permitting to set up. Please check your local ordinances if you have questions on what permits you may need to get one. 
+        If you get a Luxury unit with a bathroom you will need a sewer or sceptic connection with in 120 feet of the unit. For electricity a 30 amp connection will be sufficient. A nestz can easily be set up for off grid housing. Nestz are not mobile housing, temporary housing, or permanent housing. Please check your local ordinances if you have questions on what permits you may need to get one. Feel free to contact us if you need guidance on regulations you might face while setting up a Nestz.  
       </div>
     </div>
   </div>
