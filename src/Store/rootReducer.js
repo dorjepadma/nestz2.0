@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import { persistStore, persistReducer } from 'redux-persist';
 
 import { userReducer } from './User/User.reducer';
 import { categoriesReducer } from './Categories/Category.reducer';

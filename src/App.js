@@ -51,30 +51,30 @@ const App = () => {
   return (
     <div>
       <GlobalStyles />
-    <Routes>
-      <Route path='/' element={<Navigation />}>
-      <Route  index element={<Home />} />
-      <Route path='/bathroom' index element={<Bathroom />} />
-      <Route path='/bedroom' index element={<Bedroom />} />
-      <Route  path='Benefits' index element={<Benefits />} />
-      <Route  path='Construction' index element={<Construction />}/>
-      <Route  path='Contact' index element={<Contact />} />
-      <Route  path='Customize' index element={<Customize />} />
-      <Route  path='Delivery' index element={<Delivery />} />
-      <Route  path='FAQ' index element={<FAQ />}/>
-      <Route  path='Kitchen' index element={<Kitchen />} />
-      <Route  path='Office' index element={<Office />} />
-      <Route  path='Paint' index element={<Paint />}/>
-      <Route  path='SignIn' index element={<Authentication />}/>
-      <Route  path='Shop' index element={<Shop />}/>
-      <Route  path='Shwag' index element={<Shwag />}/>
-      <Route  path='Specs' index element={<ProductSpecs />}/>
-      <Route  path='story' index element={<Story />}/>
-      <Route  path='Social' index element={<Social />}/>
-      <Route  path='Checkout' index element={<Checkout />}/>
-      </Route>
-    </Routes>
-    <Footer/>
+        <Routes>
+            <Route path='/' element={<Navigation />}>
+            <Route  index element={<Home />} />
+            <Route path='/bathroom' index element={<Bathroom />} />
+            <Route path='/bedroom' index element={<Bedroom />} />
+            <Route  path='Benefits' index element={<Benefits />} />
+            <Route  path='Construction' index element={<Construction />}/>
+            <Route  path='Contact' index element={<Contact />} />
+            <Route  path='Customize' index element={<Customize />} />
+            <Route  path='Delivery' index element={<Delivery />} />
+            <Route  path='FAQ' index element={<FAQ />}/>
+            <Route  path='Kitchen' index element={<Kitchen />} />
+            <Route  path='Office' index element={<Office />} />
+            <Route  path='Paint' index element={<Paint />}/>
+            <Route  path='SignIn' index element={<Authentication />}/>
+            <Route  path='Shop' index element={<Shop />}/>
+            <Route  path='Shwag' index element={<Shwag />}/>
+            <Route  path='Specs' index element={<ProductSpecs />}/>
+            <Route  path='story' index element={<Story />}/>
+            <Route  path='Social' index element={<Social />}/>
+            <Route  path='Checkout' index element={<Checkout />}/>
+          </Route>
+        </Routes>
+        <Footer/>
     </div>
   );
 };
