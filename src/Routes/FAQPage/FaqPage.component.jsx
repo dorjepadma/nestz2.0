@@ -30,7 +30,7 @@ const FAQ = () => (
           <div className="faqCardTitle">
               How do Nestz fit together?
           </div>
-            All 6 sides of the Nestz unit are removable. Nestz can be stacked, set up end to end, or side by side to make a bigger unit as fits your space and budget.
+            All 6 sides of the Nestz unit are removable. Nestz can be stacked, set up end to end, or side by side to make a bigger unit as fits your space and budget. When multiple units are combined, each unit will need at least 6 points of contact with the ground. 
         </div>
       <div>
       <div className='faqCardBlock'> 
@@ -46,7 +46,7 @@ const FAQ = () => (
         <div className="faqCardTitle">
           How are Nestz delivered?
         </div>
-        We deliver the Nestz to your property on top of our flatbed trailer and then place it where you want. The delivery charge is 200 dollars if within a 30 mile radius of the PDX airport. The delivery fee is 4$ per mile. This fee includes delivery to your property but does not include time helping to set it up. We will deliver anywhere within Washington or Oregon state. For more information read the Delivery page.
+        We deliver the Nestz to your property on top of our flatbed trailer and then place it where you want. The delivery charge is $200 dollars if within a 30 mile radius of the PDX airport. The delivery fee is 4$ per mile. This fee includes delivery to your property but does not include time helping to set it up. We will deliver anywhere within Washington or Oregon state. For more information read the Delivery page.
         <Link className='FAQlink' to='/Delivery'>
         <Button buttonType='blue'>We Deliver</Button>
         </Link>
@@ -72,6 +72,14 @@ const FAQ = () => (
         </div>
         If you get a Luxury unit with a bathroom you will need a sewer or sceptic connection with in 120 feet of the unit. For electricity a 30 amp connection will be sufficient. A nestz can easily be set up for off grid housing. Nestz are not mobile housing, temporary housing, or permanent housing. Please check your local ordinances if you have questions on what permits you may need to get one. Feel free to contact us if you need guidance on regulations you might face while setting up a Nestz.  
       </div>
+      </div>
+        <div className='faqCardBlock'> 
+          <div className="faqCardTitle">
+              What Quality Standards are Nestz built to?
+          </div>
+            Nestz are built to WAC Code 296-150P and also carry a Washington State stamp. What does this mean you may ask? A rental is designed for less than 180 days continuous occupancy and can be moved.  
+        </div>
+      <div>
     </div>
   </div>
 
