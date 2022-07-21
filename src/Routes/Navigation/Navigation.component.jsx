@@ -43,7 +43,6 @@ const currentUser = useSelector (selectCurrentUser);
         < NavBarLink  to='/shop' >SHOP</ NavBarLink>
         < NavBarLink to='/FAQ' >F.A.Q.</ NavBarLink>
         < NavBarLink  to='/Specs' >DETAILS</ NavBarLink>
-        < NavBarLink  to="/Materials" >MATERIALS</ NavBarLink>
         < NavBarLink  to="/Delivery" >DELIVERY</ NavBarLink>
         < NavBarLink  to='/Story' >STORY</ NavBarLink>
         < NavBarLink  to='/Social' >SOCIAL</ NavBarLink>
