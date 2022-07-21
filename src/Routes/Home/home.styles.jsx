@@ -51,6 +51,15 @@ export const HomePageContainer = styled.div`
   margin-right:1em;
   height:66%;
 }
+.walkThroughText {
+  text-align:center;
+  justify-content:center;
+  padding:1em;
+
+  height:66%;
+  font-weight:bold;
+  font-size:5em;
+}
 .titleContainer {
   color: white;
   background-color: black;
@@ -58,11 +67,19 @@ export const HomePageContainer = styled.div`
   justify-content:center;
   padding:1em;
   height:66%;
+  font-size:2em;
 }
 
 .reservation {
   color:black;
   font-size: .75em;
+}
+jumboDirectory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width:100%;
 }
 .logoFadeIn {
   position: relative;

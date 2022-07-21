@@ -1,56 +1,14 @@
 import { Outlet } from  'react-router-dom';
 
 import Directory from '../../Components/Directory/directory.component';
+import { Row } from 'react-bootstrap';
 
-
+import categories from '../../Components/MenuItem/HomeCategories.jsx';
 import NestzLogo2 from '../../assets/images/LogoVersions/Nestz-logo2.jpg';
-import ContainerHomesMountains from '../../assets/images/ContainerHomesMountains.jpeg';
-import grannyFlat from '../../assets/images/grannyFlat.jpeg';
-import podBlueprint from '../../assets/images/podBlueprint.png';
-import socialContainer from '../../assets/images/socialContainer.jpeg';
-import ContactUs from '../../assets/images/ContactUs.png';
 import { HomePageContainer } from './home.styles';
 
+
 const Home = () => {
-  const categories = [
-    {
-      title: 'Buy a Nestz',
-      subTitle: 'Make One Home',
-      imageUrl: [grannyFlat],
-      linkUrl: 'Shop',
-      size: 'large',
-      id: 1,
-    },
-    {
-    title: 'Nestz',
-    subTitle: 'The Story',
-    imageUrl: [ContainerHomesMountains],
-    linkUrl: 'Story',
-    id: 2
-  },
-  {
-    title: 'The Details',
-    subTitle: 'product specs and options',
-    imageUrl: [podBlueprint],
-    linkUrl: 'Details',
-    id: 3
-  },
-  {
-    title: 'Inquiries',
-    subTitle: 'Have questions?',
-    imageUrl: [ContactUs],
-    linkUrl: 'Inquiries',
-    id: 4
-  },
-  {
-    title: 'Social Nestz',
-    subTitle: 'Share your adventure',
-    imageUrl: [socialContainer],
-    size: 'large',
-    linkUrl: 'Social',
-    id: 5
-  },
-  ];
   
   return (
    
@@ -66,14 +24,20 @@ const Home = () => {
          </div>
          <div md='auto' className='jumbotronTitle'>
            <div className='textContainer'>
-             Nestz are move in ready 8' x 20' tiny homes available for order in the Pacific Northwest. 
+             Nestz are move in ready 8' x 20' tiny homes constructed and delivered in the Pacific Northwest. 
            </div>
          </div>
      </div>
    </div> 
-   
-
-  <Directory categories={categories} />
+   <Row className='walkthrough'>
+         <div className="walkThroughText" >A Bedroom Nestz Walk through</div>
+        <iframe title= 'nestz walkthrough' type="text/javascript" async data-short="3JjZmpRwQ" width="100%" height="500px" src="https://app.cloudpano.com/tours/3JjZmpRwQ?sceneId=QehdNaOgc">
+        </iframe>
+   </Row>
+    <div className="walkThroughText">
+             Explore the World of Tiny Homes
+    </div>
+  <Directory className='homeDirectory' categories={categories} />
   <Outlet />
   </HomePageContainer>
  

@@ -44,6 +44,7 @@ const paymentResult = await stripe.confirmCardPayment(clientSecret, {
     card: elements.getElement(CardElement),
     billing_details: {
       name: currentUser ? currentUser.displayName : 'guest',
+      
     }
   }
 });
