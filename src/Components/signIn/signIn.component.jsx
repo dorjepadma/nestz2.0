@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { 
   signInAuthUserWithEmailAndPassword, 
-  // signInWithGooglePopup,
+  signInWithGooglePopup,
    } from '../../utils/Firebase/firebase.utils';
 
 import FormInput from '../FormInput/FormInput.component';
@@ -25,10 +25,10 @@ const SignInForm = () => {
     setFormFields(defaultFormFields);
   }
 
-  // const signInWithGoogle = async () => {
-  //   await signInWithGooglePopup();
+  const signInWithGoogle = async () => {
+    await signInWithGooglePopup();
 
-  // };
+  };
 
 
   const handleSubmit = async (e) => {
@@ -86,9 +86,9 @@ const handleChange = (event) => {
 
       <div className='buttonsContainer'>
         <Button type='submit'>Sign In</Button>
-        {/* <Button  buttonType={BUTTON_TYPE_CLASSES.google} onClick={signInWithGoogle}>
+        <Button  buttonType={BUTTON_TYPE_CLASSES.google} onClick={signInWithGoogle}>
             Google sign in
-        </Button> */}
+        </Button>
       </div>
      </form>
    </span>

@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux';
-import finalPropsSelectorFactory from 'react-redux/es/connect/selectorFactory';
 import { useNavigate } from 'react-router-dom';
 
 import Button from '../Button/Button.component';
@@ -7,7 +6,7 @@ import CartItem from '../CartItem/CartItem.component';
 
 import { selectCartItems } from '../../Store/Cart/Cart.selector';
 
-import { CartDropdownContainer, EmptyMessage, CartItems } from './CartDropdown.styles.jsx';
+import { CartDropdownContainer, CartItems } from './CartDropdown.styles.jsx';
 
 const CartDropdown = () => {
   const cartItems = useSelector(selectCartItems);
