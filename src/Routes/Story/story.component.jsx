@@ -3,6 +3,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import RelaxingBirds from '../../assets/audio/RelaxingBirds.mp3'
 
+
 import './Story.styles.scss';
 
 //story page with forest path background. Story by Rob and Sinead, edited by me.
