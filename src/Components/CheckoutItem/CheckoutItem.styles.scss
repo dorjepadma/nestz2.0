@@ -16,9 +16,10 @@
   .price { 
   width: 23%; } 
   .quantity { 
-  display: flex; 
+    display:flex;
   .arrow { 
-    cursor: pointer; } 
+    cursor: pointer; 
+  } 
     .value { 
       margin: 0 10px; 
     } 

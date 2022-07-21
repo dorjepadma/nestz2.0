@@ -11,9 +11,9 @@ const Footer = () => (
     <div className="row">
       <div className="col-md-3 footer-column">
         <ul className="nav flex-column">
-          <li className="nav-item">
+          <div className="nav-item">
             <span className="footer-title">Offerings:</span>
-          </li>
+          </div>
           {/* <li className="nav-item">
             <Link to='/Rental' className="nav-link" href="#">RENTALS</Link>
           </li> */}
@@ -30,9 +30,9 @@ const Footer = () => (
       </div>
       <div className="col-md-4 footer-column">
         <ul className="nav flex-column">
-          <li className="nav-item">
+          <div className="nav-item">
             <span className="footer-title">Company:</span>
-          </li>
+          </div>
           <li className="nav-item">
             <Link to='/Story' className='nav-link'>OUR STORY</Link>
           </li>
@@ -46,9 +46,9 @@ const Footer = () => (
       </div>
       <div className="col-md-4 footer-column">
         <ul className="nav flex-column">
-          <li className="nav-item">
+          <div className="nav-item">
             <span className="footer-title">Contact & Support:</span>
-          </li>
+          </div>
           <li className="nav-item">
             <span className="nav-link">Phone: 1.971.206.1400</span>
           </li>
@@ -64,7 +64,7 @@ const Footer = () => (
    
     <div className="row text-center">
       <div className="col-md-4 box">
-        <span className="copywrite
+        <span className="copyright
         ">©RobsinInc 
         <script>document.write(new Date().getFullYear())</script>
         </span>

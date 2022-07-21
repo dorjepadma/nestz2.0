@@ -9,7 +9,13 @@ import { getAuth,
   signOut,
   onAuthStateChanged,
 } from 'firebase/auth';
-import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
+import { getFirestore, 
+  doc, 
+  getDoc, 
+  getDocs,
+  setDoc, 
+  collection, 
+  query } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBPFl2JIA2pN79uHvUyLkM8wM3Dre48phM",
@@ -38,10 +44,16 @@ facebookProvider.setCustomParameters({
 export const auth = getAuth();
 export const signInWithGooglePopup = () => signInWithPopup(auth, googleProvider);
 export const signInWithGoogleRedirect = () => signInWithRedirect(auth, googleProvider);
-export const signInWithFacebookPopup = () => signInWithPopup(auth, facebookProvider);
-export const signInWithFacebookRedirect = () => signInWithRedirect(auth, facebookProvider);
 
 export const db = getFirestore();
+
+export const getCategoriesAndDocuments = async () => {
+  const collectionRef = collection(db, 'collections');
+  const q = query(collectionRef);
+
+  const querySnapshot = await getDocs(q);
+  return querySnapshot.docs.map(docSnapshot => docSnapshot.data());
+};
 
 export const createUserDocumentFromAuth = async (
   userAuth,

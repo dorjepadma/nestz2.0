@@ -1,0 +1,62 @@
+.customizePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../../assets/images/CustomizeExamples/VitruvianMan.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customizeCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+    width: 88%;
+    margin: 3em auto;
+    padding: 3.33em;
+    background: white;
+    -moz-box-shadow: 0 0 13px black;
+    -webkit-box-shadow: 0 0 13px black;
+    box-shadow: 0 15px 13px black; 
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 3;
+      padding: 3;
+    }
+}
+.customizeTitleCard {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-items: center;
+  width: 88%;
+  margin: 1em auto;
+  padding: 1.33em;
+  background: white;
+  opacity: .8;
+  -moz-box-shadow: 0 0 13px black;
+  -webkit-box-shadow: 0 0 13px black;
+  box-shadow: 0 15px 13px black;  // border-radius: 5%;
+}
+.customizableCardText {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding: 2em;
+  margin: 2em;
+}
+.image {
+  width: 95%;
+  margin-bottom:1.33em;
+  border-radius: 1%;
+  border: width 3px;
+  border-color: #000000;
+  border: solid;
+  -moz-box-shadow: 0 0 13px black;
+    -webkit-box-shadow: 0 0 13px black;
+    box-shadow: 0 15px 13px black;
+}

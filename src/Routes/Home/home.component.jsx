@@ -51,10 +51,10 @@ const Home = () => {
     id: 5
   },
   ];
-
+  
   return (
+   
     <HomePageContainer>
-        
     <div className='titleContainer'> 
     <h2>Tiny Homes and Zen Places</h2>  
    </div>
@@ -74,9 +74,9 @@ const Home = () => {
    
 
   <Directory categories={categories} />
-    <Outlet />
- 
+  <Outlet />
   </HomePageContainer>
+ 
   );
 };
 

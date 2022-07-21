@@ -2,12 +2,11 @@ import { useState } from 'react';
 
 import { 
   signInAuthUserWithEmailAndPassword, 
-  createUserDocumentFromAuth,
   signInWithGooglePopup,
    } from '../../utils/Firebase/firebase.utils';
 
 import FormInput from '../FormInput/FormInput.component';
-import Button from '../Button/Button.component';
+import Button,  { BUTTON_TYPE_CLASSES } from '../Button/Button.component';
 
 import './SignIn.styles.scss';
 
@@ -87,7 +86,7 @@ const handleChange = (event) => {
 
       <div className='buttonsContainer'>
         <Button type='submit'>Sign In</Button>
-        <Button type='button' buttonType='google' onClick={signInWithGoogle}>
+        <Button  buttonType={BUTTON_TYPE_CLASSES.google} onClick={signInWithGoogle}>
             Google sign in
         </Button>
       </div>

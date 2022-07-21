@@ -1,23 +1,29 @@
-import './Button.styles.scss';
-//default
+import {
+  BaseButton,
+  GoogleSignInButton,
+  InvertedButton,
+  BlueButton,
+  ButtonSpinner,
+} from './Button.styles';
 
-// inverted
+export const BUTTON_TYPE_CLASSES = {
+  base: 'base',
+  google: 'google-sign-in',
+  inverted: 'inverted',
+  blue: 'blue',
+};
 
-// google signin
+const getButton = (buttonType = BUTTON_TYPE_CLASSES.base) =>
+  ({
+    [BUTTON_TYPE_CLASSES.base]: BaseButton,
+    [BUTTON_TYPE_CLASSES.google]: GoogleSignInButton,
+    [BUTTON_TYPE_CLASSES.inverted]: InvertedButton,
+    [BUTTON_TYPE_CLASSES.blue]: BlueButton,
+  }[buttonType]);
 
-const BUTTON_TYPE_CLASSES = {
-  google: 'google-button',
-  inverted: 'inverted-button',
-}
-
-const Button = ({ children, buttonType, ...otherProps }) => {
-  return (
-    <button className={`button-container ${BUTTON_TYPE_CLASSES[buttonType]}`} 
-    {...otherProps}>
-      <span>{children}</span>
-    </button>
-  );
-}
+const Button = ({ children, buttonType, isLoading, ...otherProps }) => {
+  const CustomButton = getButton(buttonType);
+  return <CustomButton disabled={isLoading} {...otherProps}>{ isLoading ? <ButtonSpinner> </ButtonSpinner> : children}</CustomButton>;
+};
 
 export default Button;
-

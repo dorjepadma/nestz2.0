@@ -1,58 +1,96 @@
-import React, { Fragment, useContext } from 'react';
-
+import React, { Fragment, useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 
 import CartIcon from '../../Components/CartIcon/CartIcon.component';
 import CartDropdown from '../../Components/CartDropdown/CartDropdown.component';
-import { UserContext } from '../../Context/user.context';
-import { CartContext } from '../../Context/cart.context';
+
+import { selectIsCartOpen } from '../../Store/Cart/Cart.selector';
+import { selectCurrentUser } from '../../Store/User/User.selector';
 import { signOutUser }  from '../../utils/Firebase/firebase.utils';
 // import { connect } from 'react-redux';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 
 import NestzLogo3 from '../../assets/images/LogoVersions/Nestz-logo3.jpeg';
-// import HomeIcon from '../homeIcon/homeIcon.component';
-// import { selectCartHidden } from '../../redux/cart/cart.selectors';
-// import { selectCurrentUser } from '../../redux/user/user.selector'
-// import { signOutStart } from '../../redux/user/user.actions';
 
-// import NavbarContainer from './Header.styles.jsx';
-import './Navigation.styles.scss'
+import { NavigationContainer, 
+  HeaderLogo, 
+  NavBarLinkContainer, 
+  LeftContainer, 
+  RightContainer, 
+  NavBarInnerContainer, 
+  NavBarExtendedContainer, 
+  NavBarLink, 
+  SignOutDiv, 
+  OpenLinksButton, 
+  NavBarLinkExtended } from './Navigation.styles';
 // navbar controls
 const Navigation = () => {
-  const { currentUser } = useContext(UserContext);
-  const { isCartOpen} = useContext(CartContext);
- 
+const currentUser = useSelector (selectCurrentUser);
+  const [ extendNavBar, setExtendNavBar ] = useState(false);
+  const isCartOpen = useSelector(selectIsCartOpen);
   return (
 <Fragment>
-<div className='navigation'>
-<Link className='logo-container' to='/' >
-  <img className= 'headerLogo' src={NestzLogo3} alt="NestzTrees"/>
-</Link>
-<div className='nav-links-container'>
-<Link className='nav-link' to='/shop' >SHOP</Link>
-<Link to='/FAQ' className='nav-link'>F.A.Q.</Link>
-<Link  to='/Process' className='nav-link'>MAKING NESTZ</Link>
-<Link  to='/Story' className='nav-link'>STORY</Link>
-<Link  to='/Social' className='nav-link'>SOCIAL</Link>
-<Link  to='/Inquiries' className='nav-link'>INQUIRIES</Link>
-<Link  to='/Details' className='nav-link'>DETAILS</Link>
-<Link  to="/Materials" className='nav-link'>MATERIALS</Link>
-<Link  to="/Delivery" className='nav-link'>DELIVERY</Link>
-<Link  to="/Customize" className='nav-link'>CUSTOMIZE</Link>
-<Link  to="/Contact" className='nav-link'>CONTACT</Link>
-<Link  to="/Shop" className='nav-link'>GET A NESTZ</Link>
-{
-  currentUser ? (
-    <span className='nav-link' onClick={signOutUser}>SIGN OUT </span>
-    ) : ( 
-    <Link  to="/SignIn" className='nav-link'>SIGN IN</Link>
-  )
+<NavigationContainer extendNavBar={extendNavBar}>
+  <NavBarInnerContainer >
+    <RightContainer>
+      <Link  to='/' >
+        <HeaderLogo src={NestzLogo3} alt='nestz logo'></HeaderLogo>
+      </Link>
+    </RightContainer>
+    <LeftContainer>
+      <NavBarLinkContainer>
+        < NavBarLink  to='/shop' >SHOP</ NavBarLink>
+        < NavBarLink to='/FAQ' >F.A.Q.</ NavBarLink>
+        < NavBarLink  to='/Specs' >DETAILS</ NavBarLink>
+        < NavBarLink  to="/Materials" >MATERIALS</ NavBarLink>
+        < NavBarLink  to="/Delivery" >DELIVERY</ NavBarLink>
+        < NavBarLink  to='/Story' >STORY</ NavBarLink>
+        < NavBarLink  to='/Social' >SOCIAL</ NavBarLink>
+        < NavBarLink  to="/Contact" >CONTACT</ NavBarLink>
+        {
+          currentUser ? (
+            <SignOutDiv className=''onClick={signOutUser}>SIGN OUT </SignOutDiv>
+            ) : ( 
+            <NavBarLink to="/SignIn" >SIGN IN</NavBarLink>
+          )
+        }
+        <OpenLinksButton onClick={() => {setExtendNavBar((curr) => !curr)
+        }}>
+          {extendNavBar ? <> &#10005;</> : <> &#8801;</>}
+          </OpenLinksButton>
+   
+          <CartIcon />
+      </NavBarLinkContainer>
+  </LeftContainer>
+</NavBarInnerContainer>
+{ extendNavBar && 
+
+ ( <NavBarExtendedContainer> 
+< NavBarLinkExtended  to='/shop' >SHOP</ NavBarLinkExtended>
+        < NavBarLinkExtended to='/FAQ' >F.A.Q.</ NavBarLinkExtended>
+        < NavBarLinkExtended  to='/Story' >STORY</ NavBarLinkExtended>
+        < NavBarLinkExtended  to='/Social' >SOCIAL</ NavBarLinkExtended>
+        < NavBarLinkExtended  to='/Inquiries' >INQUIRIES</ NavBarLinkExtended>
+        < NavBarLinkExtended  to='/Details' >DETAILS</ NavBarLinkExtended>
+        < NavBarLinkExtended  to="/Materials" >MATERIALS</ NavBarLinkExtended>
+        < NavBarLinkExtended  to="/Delivery" >DELIVERY</ NavBarLinkExtended>
+        < NavBarLinkExtended  to="/Customize" >CUSTOMIZE</ NavBarLinkExtended>
+        < NavBarLinkExtended  to="/Contact" >CONTACT</ NavBarLinkExtended>
+        < NavBarLinkExtended  to="/Shop" >GET A NESTZ</ NavBarLinkExtended>
+        {
+          currentUser ? (
+            <SignOutDiv className=''onClick={signOutUser}>SIGN OUT </SignOutDiv>
+            ) : ( 
+            <NavBarLink to="/SignIn" >SIGN IN</NavBarLink>
+          )
+        }
+</NavBarExtendedContainer>)
+
 }
-  <CartIcon />
-</div>
 {isCartOpen && <CartDropdown />}
-</div>
+
+</NavigationContainer>
 <Outlet />
 </Fragment>
 
