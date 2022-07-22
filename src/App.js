@@ -29,6 +29,7 @@ import ProductSpecs from './Routes/SpecsPage/Specs.component'
 import Paint from './Routes/PaintPage/Paint.component';
 import Kitchen from './Routes/KitchenPage/Kitchen.component';
 
+
 import { setCurrentUser } from "./Store/User/User.action";
 
 import { GlobalStyles } from './global.styles';

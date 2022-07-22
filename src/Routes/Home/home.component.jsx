@@ -19,9 +19,9 @@ const Home = () => {
 
    <div className='jumbotron' >
      <div>
-         <div className="homepage">
+         {/* <div className="homepage">
          <img className= 'logoFadeIn' width="10%"  src={NestzLogo2} w3-animate-fading='true' alt='trees and bird logo of Nestz'/>
-         </div>
+         </div> */}
          <div md='auto' className='jumbotronTitle'>
            <div className='textContainer'>
              Nestz are move in ready 8' x 20' tiny homes constructed and delivered in the Pacific Northwest. 
