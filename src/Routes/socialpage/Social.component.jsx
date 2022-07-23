@@ -19,7 +19,7 @@ We would love to hear from you and see how you would use a Nestz. Connect with u
 
 
   <div className='curatorContainer'>
-      <Curator feedId="49b41e79-496f-4e44-b999-ac6cf4f453ba" />
+      <Curator feedId="d8aa9f35-b8eb-4e3c-9ee4-9a0dbb61cd92" />
   </div>
   </div>
 </Container>

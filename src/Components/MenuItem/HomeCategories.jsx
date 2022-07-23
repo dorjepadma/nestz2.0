@@ -1,5 +1,4 @@
-import ContainerHomesMountains from '../../assets/images/ContainerHomesMountains.jpeg';
-import grannyFlat from '../../assets/images/grannyFlat.jpeg';
+
 import podBlueprint from '../../assets/images/podBlueprint.png';
 import socialContainer from '../../assets/images/socialContainer.jpeg';
 import ContactUs from '../../assets/images/ContactUs.png';
