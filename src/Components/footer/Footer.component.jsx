@@ -56,7 +56,7 @@ const Footer = () => (
             <span className="nav-link">Email: NestzInc@gmail.com</span>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/Inquiries">CONTACT US</Link>
+            <Link className="nav-link" to="/Contact">CONTACT US</Link>
           </li>
         </ul>
       </div>
