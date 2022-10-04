@@ -9,6 +9,8 @@ export const HomePageContainer = styled.div`
   justify-content: center;
   padding:1em;
   color: white;
+
+ 
 }
 .walkthrough {
   display: flex;
