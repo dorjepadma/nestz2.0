@@ -99,11 +99,19 @@ export const NavBarLink = styled(Link)`
 `
 export const NavBarLinkExtended = styled(Link)`
   /* padding: 10px 15px; */
-  font-size: 2em;
+  font-size: 1.5em;
   cursor: pointer;
   text-decoration: none;
   color: black;
   margin: 10px;
+  @media (max-width: 768px) {
+    font-size: 3em;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
 `
 export const SignOutDiv = styled.div`
   /* padding: 10px 15px; */

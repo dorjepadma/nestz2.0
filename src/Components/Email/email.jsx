@@ -30,7 +30,7 @@ const Mailer = () => {
     >
       <Button variant="primary" className='emailLink' style={{ fontSize: '1rem' }}>
         Email Nestz
-                  </Button>
+      </Button>
     </Mailto>
   )
 }
