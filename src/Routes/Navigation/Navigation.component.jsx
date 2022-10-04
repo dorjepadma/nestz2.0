@@ -58,7 +58,6 @@ const currentUser = useSelector (selectCurrentUser);
         }}>
           {extendNavBar ? <> &#10005;</> : <> &#8801;</>}
           </OpenLinksButton>
-   
           <CartIcon />
       </NavBarLinkContainer>
   </LeftContainer>
@@ -72,11 +71,9 @@ const currentUser = useSelector (selectCurrentUser);
         < NavBarLinkExtended  to='/Social' >SOCIAL</ NavBarLinkExtended>
         < NavBarLinkExtended  to='/Inquiries' >INQUIRIES</ NavBarLinkExtended>
         < NavBarLinkExtended  to='/Details' >DETAILS</ NavBarLinkExtended>
-        < NavBarLinkExtended  to="/Materials" >MATERIALS</ NavBarLinkExtended>
         < NavBarLinkExtended  to="/Delivery" >DELIVERY</ NavBarLinkExtended>
         < NavBarLinkExtended  to="/Customize" >CUSTOMIZE</ NavBarLinkExtended>
         < NavBarLinkExtended  to="/Contact" >CONTACT</ NavBarLinkExtended>
-        < NavBarLinkExtended  to="/Shop" >GET A NESTZ</ NavBarLinkExtended>
         {
           currentUser ? (
             <SignOutDiv className=''onClick={signOutUser}>SIGN OUT </SignOutDiv>
