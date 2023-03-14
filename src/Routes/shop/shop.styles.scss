@@ -45,3 +45,18 @@ justify-content:center;
   color: black;
   margin-bottom: 20px;
 }
+
+.shopBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  color: aquamarine;
+  width: 100%;
+  height: 100px;
+  background-color: #0463f0;
+  margin-bottom: 20px;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
