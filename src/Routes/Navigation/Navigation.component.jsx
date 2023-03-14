@@ -25,6 +25,7 @@ import { NavigationContainer,
   OpenLinksButton, 
   NavBarLinkExtended } from './Navigation.styles';
 // navbar controls
+//shopping cart disabled, reactivate when ready to sell
 const Navigation = () => {
 const currentUser = useSelector (selectCurrentUser);
   const [ extendNavBar, setExtendNavBar ] = useState(false);
@@ -58,7 +59,7 @@ const currentUser = useSelector (selectCurrentUser);
         }}>
           {extendNavBar ? <> &#10005;</> : <> &#8801;</>}
           </OpenLinksButton>
-          <CartIcon />
+          {/* <CartIcon /> */}
       </NavBarLinkContainer>
   </LeftContainer>
 </NavBarInnerContainer>
@@ -84,7 +85,7 @@ const currentUser = useSelector (selectCurrentUser);
 </NavBarExtendedContainer>)
 
 }
-{isCartOpen && <CartDropdown />}
+{/* {isCartOpen && <CartDropdown />} */}
 
 </NavigationContainer>
 <Outlet />

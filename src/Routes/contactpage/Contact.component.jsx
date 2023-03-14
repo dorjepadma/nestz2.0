@@ -14,6 +14,9 @@ const Contact = () => (
   <Card.Body>
   <Card.Img className='contactImage' src={ContactUs} alt='three phones to call us'/>
   <Card.Text className='contactText'>
+  We are Nestz Inc. We are a small business located in Portland, Oregon. We are a family owned and operated business. We are passionate about our product and we are excited to share it with you. For current pricing and delivery information and costs please call or email us.
+  </Card.Text>
+  <Card.Text className='contactText'>
   Our specialty is Nestz housing. We would be happy to speak with you any time about how this housing solution will work for you. Contact us anytime with questions or inquiries about Nestz.
   </Card.Text>
   <Card.Text className='contactText'>

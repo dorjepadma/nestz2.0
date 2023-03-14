@@ -15,7 +15,8 @@ const ProductCard = ({ product }) => {
 
   const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
 
-
+// Price is disabled, reactivate when ready to sell, also reactive in Shopping Cart
+// Cart and Checkout deactivated, reactive when ready to sell, also reactivate in Navbar
   return( 
   <div className='product-card-container'>
     <img src={imageUrl} alt={`${name}`} />
@@ -33,7 +34,7 @@ const ProductCard = ({ product }) => {
         Call for Price
         </span>
     </div>
-    <Button buttonType={BUTTON_TYPE_CLASSES.inverted} onClick={addProductToCart}> Add to cart</Button>
+    {/* <Button buttonType={BUTTON_TYPE_CLASSES.inverted} onClick={addProductToCart}> Add to cart</Button> */}
   </div>
   )
 }

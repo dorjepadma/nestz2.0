@@ -8,6 +8,17 @@ import { setCategories } from '../../Store/Categories/Category.action';
 
 import ProductCard from '../../Components/ProductCard/ProductCard.component';
 
+import { NavigationContainer, 
+  HeaderLogo, 
+  NavBarLinkContainer, 
+  LeftContainer, 
+  RightContainer, 
+  NavBarInnerContainer, 
+  NavBarExtendedContainer, 
+  NavBarLink, 
+  SignOutDiv, 
+  OpenLinksButton, 
+  NavBarLinkExtended } from '../Navigation/Navigation.styles';
 import './shop.styles.scss';
 
 
@@ -24,6 +35,10 @@ const Shop = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
 
   return (
+    <div>
+      <div className='shopBanner'> 
+      < NavBarLink  to='/Contact' >Call or Email for Pricing</ NavBarLink>
+      </div>
     <div className='shopPage'>
       {Object.keys(categoriesMap).map((title) => (
         <div className='shopTitle'>
@@ -35,6 +50,8 @@ const Shop = () => {
         </div>
       </div>
         ))}
+      </div>
+    
     </div>
   )
 }
