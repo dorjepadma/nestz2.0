@@ -11,13 +11,13 @@ const MenuItem = ({category}) => {
   const {title, subTitle, imageUrl, size, linkUrl} = category;
   return (
     
-  <Container className={`${size} menu-item`}  onClick={() => navigate(`${linkUrl}`)}>
+  <div className={`${size} menu-item`}  onClick={() => navigate(`${linkUrl}`)}>
     <div className='background-image' style={{backgroundImage: `url(${imageUrl})`}}/> 
         <div className ='content'>
           <h1 className = 'title'>{title}</h1>
           <span className ='subtitle'> {subTitle}</span>
         </div>
-      </Container>)
+      </div>)
 }
 
 export default MenuItem;

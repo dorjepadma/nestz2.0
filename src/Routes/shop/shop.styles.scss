@@ -4,7 +4,7 @@
   column-gap: 5px;
   row-gap: 15px;
   height: 400px;
-
+ 
 
   @media (max-width: 800px) {
     display: flex;
@@ -21,7 +21,7 @@
   margin: 10px;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 5px;
-  row-gap: 33px;
+
   margin-bottom: 100px;
   @media (max-width: 800px) {
     display: flex;

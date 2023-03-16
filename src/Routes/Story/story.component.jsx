@@ -16,15 +16,15 @@ const Story = () => (
 <Card.Body>
 <Card.Title>
   <h2>
-    Born from love and a couple Pacific Northwest people looking to make everyone's life better.
-    </h2>
-    </Card.Title>
+    Nestz are a instant home concept born from love and a couple Pacific Northwest people looking to make everyone's life better.
+   </h2>
+</Card.Title>
 
 <Card.Text> 
 Everyone should be able to have a house. Regulations and construction times are cost prohibitive and affordable ownership has become out of reach for many people. We are setting out to change that. Whether you have just purchased a piece of property or need an affordable mother in law unit, we can get you an extra room or house immediately at a price point that works for you. 
 </Card.Text>
 <Card.Text> 
-This is the dream of Nestz. Instant housing for as when or long as you need it on your property. 
+This is the dream of Nestz. Instant housing for immediately available for long as you need it on your property. 
 </Card.Text>
 <Card.Text>
 Nestz is the vision of Rob and Sinead. It came about when Rob and Sinead wanted to build their dream home in the Columbia River Gorge. It was to be an underground structure with a green roof, solar and geothermal heating. Unfortunately, they did not do their homework and found out too late that a governmental agency has an easement on their property and would not grant approval to build the new structure.
