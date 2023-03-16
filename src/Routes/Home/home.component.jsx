@@ -39,7 +39,7 @@ const Home = () => {
              Explore the World of Tiny Homes
     </div>
     <div className="microHousingText">
-             Microhousing is a perfect solution for Cities, corporate businesses, and individuals looking for quick, reliable, and affordable housing. Our Nestz are built to last and are designed to be easily moved and relocated.
+             Microhousing is a perfect solution for civic, government, corporate businesses, and individuals looking for quick, reliable, and affordable housing. Our Nestz are built to last and are designed to be easily moved and relocated.
     </div>
     <div className="microHousingText">
             Contact us for civic or corporate micro housing solutions.
