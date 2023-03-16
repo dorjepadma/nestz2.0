@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { Card } from 'react-bootstrap';
 import Button from '../../Components/Button/Button.component';

@@ -56,11 +56,18 @@ export const HomePageContainer = styled.div`
 .walkThroughText {
   text-align:center;
   justify-content:center;
-  padding:1em;
-
-  height:66%;
+  padding:1px;
+  height:50%;
   font-weight:bold;
   font-size:5em;
+}
+.walkThroughText2 {
+  text-align:center;
+  justify-content:center;
+  padding:1px;
+  height:50%;
+  font-weight:bold;
+  font-size:2em;
 }
 .titleContainer {
   color: white;
@@ -70,18 +77,41 @@ export const HomePageContainer = styled.div`
   padding:1em;
   height:66%;
   font-size:2em;
+  opacity: .9;
+ margin: 1px;
 }
-
+.titleContainer2 {
+  color: white;
+  background-color: black;
+  text-align:center;
+  justify-content:center;
+  padding:1em;
+  height:66%;
+  font-size:2em;
+  opacity: .9;
+ margin: 1px;
+ background-color: #0EBFE9;
+}
+/* .homeDirectory {
+  display: flex;
+  width: 100%;
+} */
 .reservation {
   color:black;
   font-size: .75em;
 }
-jumboDirectory {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width:100%;
+
+.microHousingText {
+  text-align:center;  
+  justify-content:center;
+  padding:1em;
+  margin-left:1em;
+  margin-right:1em;
+  height:66%;
+  font-weight:bold;
+  font-size: xx-large;
+  background-color: #0EBFE9;
+  opacity: .9;
 }
 .logoFadeIn {
   position: relative;

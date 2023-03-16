@@ -10,10 +10,8 @@
 
 .contactImage {
   width: 100%;
-  height: auto;
   margin-bottom: 5em;
   border-radius: 2%;
- 
 }
 .contactCard {
   display: flex;
@@ -29,8 +27,8 @@
     -webkit-box-shadow: 0 0 15px black;
     box-shadow: 0 0 15px black;
     box-shadow: 0 15px 20px black;
-    // border-radius: 5%;
 }
+
 .mailerButton {
   display: flex;
   justify-content: center;

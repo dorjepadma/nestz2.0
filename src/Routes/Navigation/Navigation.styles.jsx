@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 // import { Navbar } from 'react-bootstrap';
 
-
 export const NavigationContainer = styled.div`
   width: 100%; 
   height: ${(props) => (props.extendNavBar ? '80vh' : '80px')}; 
@@ -13,7 +12,6 @@ export const NavigationContainer = styled.div`
     height: 80px;}
   
 `
-
 export const NavLinksContainer = styled.div`
 width: 50%; 
 height: 100%; 
@@ -78,6 +76,7 @@ export const NavBarExtendedContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
+font-size: 8px;
 @media ( min-width: 800px )
 {
   display: none;
@@ -103,9 +102,9 @@ export const NavBarLinkExtended = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   color: black;
-  margin: 10px;
+  margin: 8px;
   @media (max-width: 768px) {
-    font-size: 3em;
+    font-size: 2em;
     color:white;
     display: flex;
     justify-content: center;

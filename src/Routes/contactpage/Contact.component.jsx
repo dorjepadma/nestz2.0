@@ -9,10 +9,10 @@ import './Contact.styles.scss';
 
 const Contact = () => (
 <div className='contactPage'>
-<Card className='contactCard'>
+<div className='contactCard'>
 <h2>Inquiries</h2>
   <Card.Body>
-  <Card.Img className='contactImage' src={ContactUs} alt='three phones to call us'/>
+  <img className='contactImage' src={ContactUs} alt='three phones to call us'/>
   <Card.Text className='contactText'>
   We are Nestz Inc. We are a small business located in Portland, Oregon. We are a family owned and operated business. We are passionate about our product and we are excited to share it with you. For current pricing and delivery information and costs please call or email us.
   </Card.Text>
@@ -23,7 +23,7 @@ const Contact = () => (
     Are you Nestz curious? Do you want to place an order? Give us a call, the Nestz are currently ready for delivery. 
   </Card.Text>
   </Card.Body>
-</Card>
+</div>
 <Card className='contactCard'>
 <h2>Contact Us</h2>
   <Card.Body>

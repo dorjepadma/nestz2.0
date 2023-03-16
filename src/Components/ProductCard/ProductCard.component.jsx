@@ -28,7 +28,7 @@ const ProductCard = ({ product }) => {
     >Read More</Button>
     </div>
     <div className='productFooter'>
-      <span className='name'>{name}</span>
+      {/* <span className='name'>{name}</span> */}
       <span className='price'>
         {/* ${price} */}
         Call for Price

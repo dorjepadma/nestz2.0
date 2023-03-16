@@ -34,7 +34,7 @@ const categories = [
   subTitle: 'Your Questions answered',
   imageUrl: [socialContainer],
   size: 'large',
-  linkUrl: 'Social',
+  linkUrl: 'FAQ',
   id: 4
 },
 {
