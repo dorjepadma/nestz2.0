@@ -37,7 +37,7 @@ const Footer = () => (
             <Link to='/Story' className='nav-link'>OUR STORY</Link>
           </li>
           <li className="nav-item">
-          <Link to='/Inquiries' className='nav-link'>INQUIRIES</Link>
+          <Link to='/Contact' className='nav-link'>INQUIRIES</Link>
           </li>
           <li className="nav-item">
           <Link to='/Social' className='nav-link'>SOCIAL and NEWS</Link>
