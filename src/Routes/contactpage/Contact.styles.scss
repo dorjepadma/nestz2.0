@@ -10,7 +10,7 @@
 
 .contactImage {
   width: 100%;
-  margin-bottom: 5em;
+  margin-bottom: 1em;
   border-radius: 2%;
 }
 .contactCard {
@@ -21,7 +21,7 @@
     width: 80%;
     height: 100%  ; 
     margin: 25px auto;
-    padding: 8px;
+    padding: 5px;
     background: white;
     -moz-box-shadow: 0 0 15px black;
     -webkit-box-shadow: 0 0 15px black;
@@ -47,5 +47,15 @@
   width: 100%;
   font-size: 1.2em;
   font-weight: bold;
+  cursor: pointer;
+}
+.contactHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 1em;
   cursor: pointer;
 }

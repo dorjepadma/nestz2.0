@@ -10,17 +10,20 @@ import './Contact.styles.scss';
 const Contact = () => (
 <div className='contactPage'>
 <div className='contactCard'>
-<h2>Inquiries</h2>
+<Card.Text className='contactHeading'>Inquiries</Card.Text>
   <Card.Body>
   <img className='contactImage' src={ContactUs} alt='three phones to call us'/>
+  <Card.Text className='contactHeading'>
+    We Want to Hear From You
+    </Card.Text>
   <Card.Text className='contactText'>
-  We are Nestz Inc. We are a small business located in Portland, Oregon. We are a family owned and operated business. We are passionate about our product and we are excited to share it with you. For current pricing and delivery information and costs please call or email us.
+    We are Nestz Inc. We are a small business located in Portland, Oregon. We are a family owned and operated business. We are passionate about our product and we are excited to share it with you. For current pricing and delivery information and costs please call or email us.
   </Card.Text>
   <Card.Text className='contactText'>
-  Our specialty is Nestz housing. We would be happy to speak with you any time about how this housing solution will work for you. Contact us anytime with questions or inquiries about Nestz.
+    Our specialty is Nestz housing. We would be happy to speak with you any time about how this housing solution will work for you. Contact us anytime with questions or inquiries about Nestz.
   </Card.Text>
   <Card.Text className='contactText'>
-    Are you Nestz curious? Do you want to place an order? Give us a call, the Nestz are currently ready for delivery. 
+    Are you Nestz curious? Do you want to place an order? Give us a call, Nestz are currently available for delivery. 
   </Card.Text>
   </Card.Body>
 </div>
